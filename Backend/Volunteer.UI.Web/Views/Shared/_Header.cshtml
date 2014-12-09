@@ -1,0 +1,51 @@
+﻿@using Volunteer.UI.Web.Models;
+@{
+    
+    
+    int culture = SiteSession.CurrentUICulture;
+
+    /*
+    
+     Get the user name from site session.
+    
+    string username = null;
+    if (Session["SiteSession"] != null)
+    {
+        SiteSession shopSession = (SiteSession)Session["SiteSession"];
+        username = shopSession.Username;
+    }
+    */
+    
+}
+
+<div class="Header row-fluid">
+    <div class="container">
+            <div class="row-fluid">
+                <div class="span12">
+
+                    <div id="divLogo" class="pull-left">
+                        <p class="site-title"><a href="@Url.Action("Index", "Job", new { })"><img src="~/Images/logo.png" alt=""/></a></p>
+                    </div>
+                    <div class="dvCulture pull-right">
+                        <select class="currentCulture" name="selectCulture" id="_cultureDDL" onchange="changeCurrentCulture(this.value)">
+                            @if (culture == 1)
+                            {
+                                <option value="0" title="@Url.Content("~/Images/flag_En.png")">English</option>
+                                <option value="1" title="@Url.Content("~/Images/flag_Nl.png")" selected="selected">Dutch</option>
+                            }
+                            else
+                            {
+                                <option value="0" title="@Url.Content("~/Images/flag_En.png")" selected="selected">English</option>
+                                <option value="1" title="@Url.Content("~/Images/flag_Nl.png")">Dutch</option>
+                            }
+                        </select>
+                    </div>
+                </div>
+                
+            </div>
+       
+    </div>
+    
+</div>
+
+@*@Html.Partial("_HeaderMenu")*@

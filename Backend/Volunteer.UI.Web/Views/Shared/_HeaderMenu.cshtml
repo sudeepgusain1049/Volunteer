@@ -1,0 +1,30 @@
+﻿@helper ActiveLink(string actionName, string controllerName, string areaName)
+    {
+        if (ViewContext.RouteData.Values["action"].ToString() == actionName &&
+                ViewContext.RouteData.Values["controller"].ToString() == controllerName &&
+                (ViewContext.RouteData.DataTokens["area"] == null 
+                || ViewContext.RouteData.DataTokens["area"].ToString() == areaName))
+        {
+            @:active
+        }
+    }
+
+    <div class="navbar navbar-inverse">
+        <div class="navbar-inner">
+            <div class="container">
+                <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="brand" href="/">Bootstrap MVC Application</a>
+                <div class="nav-collapse collapse">
+                    <ul class="nav">
+                        <li class="@ActiveLink("Index", "Job", null)">@Html.ActionLink("Job", "Index", "Job")</li>
+                        <li class="@ActiveLink("About", "Job", null)">@Html.ActionLink("About", "About", "Job")</li>
+                        <li class="@ActiveLink("Contact", "Job", null)">@Html.ActionLink("Contact", "Contact", "Job")</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>

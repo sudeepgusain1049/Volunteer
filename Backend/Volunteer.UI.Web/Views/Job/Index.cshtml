@@ -1,0 +1,53 @@
+﻿@{
+    ViewBag.Title = "Job";
+}
+<div class="main-border1">
+    <div class="sign-wrapper row margin-rl-0 wrapper-form">
+        <div class="col-lg-12 ">
+            <div class="col-lg-5 center-block padding-bottom-0">
+                <h2>Vrijwilligersvacaturebank.nl</h2>
+            </div>
+        </div>
+        <div class="col-sm-12">
+            <p>Vrijwilligersvacaturebank.nl is een vrijwilligersrecruitmentplatform voor heel Nederland. Het is een verzamelplaats voor vrijwilligers, vrijwilligersgroepen, bedrijven, organisaties en overheidsinstellingen om elkaar te vinden en initiatieven met elkaar te organiseren, realiseren en delen. Vrijwilligerswerk wordt steeds belangrijke voor onze maatschappij. Denk aan de discussies rond de zorgvrijwilliger en de participatiemaatschappij. De vrijwilligersvacaturebank faciliteert de gehele participerende community door een nationale infrastructuur te leveren met als doel goede initiatieven in een stroomversnelling te krijgen. Het platform biedt alle vrijwilligersorganisaties state-of-the-art recruitmenttechnologie zoals deze gebruikt wordt in de commerciële sector. Van het plaatsen van en solliciteren op vrijwilligersvacatures; het distribueren van deze vacatures op het platform, social media, andere vacaturebanken en eigen websites, tot het verwerken van sollicitaties. Dit alles voor efficiënte matching binnen de vrijwilligerssector.</p>
+        </div>
+        <div class="col-sm-12">
+            <div class="row margin-rl-0">
+                <div class="col-lg-2">&nbsp</div>
+                <div class="col-lg-9 padding-bottom-0 padding-left-0">
+                    <div class="row margin-rl-0">
+                        <div class="col-lg-8 orgVol">
+                            <h4 class="organization"><img src="~/Images/VV_Icon_Volunteers.png" class="image-icon"> @Resources.Labels.Organization </h4>
+                            <ul>
+                                <li><a target='_blank' href="volunteer/app/organization/search/searchVol.html"> Search volunteer</a></li>
+                                <li><a target='_blank' href="@Url.Action("PostJob", "Job", new { })">Post Job</a> </li>
+                                <li><a target='_blank' href="volunteer/app/volunteer/volunteerProfile/volunteerProfile.html?name=Marleen%20Bosch&city=Amsterdam,%20Noord%20Holland&image=../../img/name1.png">See volunteer profile</a></li>
+                                <li><a target='_blank' href="volunteer/app/integrationSettings/integrationSettings.html?owner=organization"> Integration page</a></li>
+                                <li>
+                                    <ul class="integration-left">
+                                        <li>&nbsp;&nbsp;&nbsp;&nbsp;- <a target='_blank' href="http://www.rodekruis.nl">rodekruis.nl</a><a class="float-right" target='_blank' href="volunteer/app/organization/job/job.html?topBar=65b6e1&clientImage=../../img/redCross.jpg&topBarText=ffffff&buttonBackColor=de2422&buttonColor=ffffff&bottomBarText=undefined&bottomBar=FCFCFC&colorBackground=ffffff&colorHeading=65b6e1&colorBodyText=616060&headingSize=30&subHeadingSize=18&bodySize=14&fontFace=Calibri&headerImageLink=www.rodekruis.nl/&fontFaceH1=Calibri&fontFaceH2=Calibri&fontFaceH2=Calibri&showOrgDetails=false&showOrgADDDetails=true&showJobLocation=true&showApplyButton=true&messageInstruction=undefined&SITV=false">Prototype 1</a>
+                                        </li>
+                                        <li>&nbsp;&nbsp;&nbsp;&nbsp;- <a target='_blank' href="http://www.warchild.nl">warchild.nl</a><a target='_blank' class="float-right" href="volunteer/app/organization/job/job.html?topBar=a29b96&clientImage=../../img/warchild.png&topBarText=ffffff&buttonBackColor=ed1b24&buttonColor=ffffff&bottomBarText=undefined&bottomBar=404040&colorBackground=000000&colorHeading=000000&colorBodyText=000000&headingSize=40&subHeadingSize=20&bodySize=18&fontFace=Arial&headerImageLink=www.warchild.nl/jobs&fontFaceH1=Arial&fontFaceH2=Arial&fontFaceH2=Arial&showOrgDetails=false&showOrgADDDetails=true&showJobLocation=true&showApplyButton=true&messageInstruction=undefined&SITV=false">Prototype 2</a>
+                                        </li>
+                                        <li>&nbsp;&nbsp;&nbsp;&nbsp;- <a target='_blank' href="http://www.amsterdam.voedselbank.org">voedselbank.org</a><a target='_blank' class="float-right" href="volunteer/app/organization/job/job.html?topBar=f8f8f5&clientImage=../../img/voedselbank.png&topBarText=92bb9e&buttonBackColor=038357&buttonColor=ffffff&bottomBarText=undefined&bottomBar=038357&colorBackground=f8f8f5&colorHeading=038357&colorBodyText=8a8a8b&headingSize=28&subHeadingSize=20&bodySize=13&fontFace=Arial&headerImageLink=www.amsterdam.voedselbank.org/category/vacatures/&fontFaceH1=Arial&fontFaceH2=Arial&fontFaceH2=Arial&showOrgDetails=false&showOrgADDDetails=true&showJobLocation=true&showApplyButton=true&messageInstruction=undefined&SITV=false">Prototype 3</a>
+                                        </li>
+                                        <li>&nbsp;&nbsp;&nbsp;&nbsp;- <a target='_blank' href="http://www.marathonrotterdam.nl/home">marathonrotterdam.nl</a><a class="float-right" target='_blank'  href="volunteer/app/organization/job/job.html?topBar=ffffff&clientImage=../../img/marathonrotterdam.png&topBarText=DC0030&buttonBackColor=ffffff&buttonColor=DC0030&bottomBarText=undefined&bottomBar=DC0030&colorBackground=DC0030&colorHeading=DC0030&colorBodyText=271700&headingSize=24&subHeadingSize=18&bodySize=12&fontFace=Arial&headerImageLink=www.marathonrotterdam.nl/home&fontFaceH1=Arial&fontFaceH2=Arial&fontFaceH2=Arial&showOrgDetails=false&showOrgADDDetails=true&showJobLocation=true&showApplyButton=true&messageInstruction=undefined&SITV=false">Prototype 4</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-4 padding-right-0 ">
+                            <h4 class="volunteer"><img src="~/Images/VV_Icon_VolunteerOpportunities.png" class="image-icon"> Volunteer</h4>
+                            <ul>
+                                <li><a target='_blank' href="volunteer/app/volunteer/searchJob/searchJob.html"> Search jobs</a></li>
+                                <li><a target='_blank' href="volunteer/app/volunteer/jobDetails/jobDetails.html?jobName=Student%20Activist%20Coordinator&jobDate=About%201%20hour%20ago">Job details</a></li>
+                                <li><a target='_blank' href="volunteer/app/volunteer/jobDetails/jobDetails.html?jobName=Student%20Activist%20Coordinator&jobDate=About%201%20hour%20ago">Oragnization details</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

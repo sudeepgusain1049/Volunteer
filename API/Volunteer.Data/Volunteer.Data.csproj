@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8F4F4C4E-01F7-4DB1-AB1D-00EB5E947177}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Volunteer.Data</RootNamespace>
+    <AssemblyName>Volunteer.Data</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.1.1\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.1\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Newtonsoft.Json.6.0.6\lib\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="DataModels\TBLApiConsumers.cs" />
+    <Compile Include="DataModels\TblApiLog.cs" />
+    <Compile Include="DataModels\TblApiTokenManager.cs" />
+    <Compile Include="DataModels\TblJobAdditionalInfo.cs" />
+    <Compile Include="DataModels\TblJobAppropriateFor.cs" />
+    <Compile Include="DataModels\TblJobAttachments.cs" />
+    <Compile Include="DataModels\TblJobAvailability.cs" />
+    <Compile Include="DataModels\TblJobCommitments.cs" />
+    <Compile Include="DataModels\TblJobDetails.cs" />
+    <Compile Include="DataModels\TblJobDiplomas.cs" />
+    <Compile Include="DataModels\TblJobIntVolunteer.cs" />
+    <Compile Include="DataModels\TblJobLanguages.cs" />
+    <Compile Include="DataModels\TblJobLocation.cs" />
+    <Compile Include="DataModels\TblJobQuestions.cs" />
+    <Compile Include="DataModels\TblJobSkills.cs" />
+    <Compile Include="DataModels\TblMasterCategories.cs" />
+    <Compile Include="DataModels\TblMasterCountry.cs" />
+    <Compile Include="DataModels\TblMasterDaysOfWeek.cs" />
+    <Compile Include="DataModels\TblMasterDiploma.cs" />
+    <Compile Include="DataModels\TblMasterInterval.cs" />
+    <Compile Include="DataModels\TblMasterJobAdditionalInfo.cs" />
+    <Compile Include="DataModels\TblMasterJobAppropriateForInfo.cs" />
+    <Compile Include="DataModels\TblMasterJobIntVolunteerInfo.cs" />
+    <Compile Include="DataModels\TblMasterJobTypes.cs" />
+    <Compile Include="DataModels\TblMasterLanguages.cs" />
+    <Compile Include="DataModels\TblMasterOrganizationType.cs" />
+    <Compile Include="DataModels\TblMasterScreeningQuestions.cs" />
+    <Compile Include="DataModels\TblMasterSkills.cs" />
+    <Compile Include="DataModels\TblMasterTimeCommitments.cs" />
+    <Compile Include="DataModels\TblMasterWorkArea.cs" />
+    <Compile Include="DataModels\TblOrganizationProfiles.cs" />
+    <Compile Include="DataModels\TblUsers.cs" />
+    <Compile Include="DataModels\TblVolunteerProfiles.cs" />
+    <Compile Include="DataModels\TokenManager.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\ApiLogRepository.cs" />
+    <Compile Include="Repositories\JobAdditionalInfoRepository.cs" />
+    <Compile Include="Repositories\JobAppropriateForRepository.cs" />
+    <Compile Include="Repositories\JobAttachmentsRepository.cs" />
+    <Compile Include="Repositories\JobAvailabilityRepository.cs" />
+    <Compile Include="Repositories\JobCommitmentsRepository.cs" />
+    <Compile Include="Repositories\JobDetailsRepository.cs" />
+    <Compile Include="Repositories\JobDiplomasRepository.cs" />
+    <Compile Include="Repositories\JobIntVolunteerRepository.cs" />
+    <Compile Include="Repositories\JobLanguagesRepository.cs" />
+    <Compile Include="Repositories\JobLocationRepository.cs" />
+    <Compile Include="Repositories\JobQuestionsRepository.cs" />
+    <Compile Include="Repositories\JobSkillsRepository.cs" />
+    <Compile Include="Repositories\MasterCategoriesRepository.cs" />
+    <Compile Include="Repositories\ApiConsumerRepository.cs" />
+    <Compile Include="Repositories\ApiTokenManagerRepository.cs" />
+    <Compile Include="Repositories\EFRepository.cs" />
+    <Compile Include="Repositories\IApiConsumerRepository.cs" />
+    <Compile Include="Repositories\IApiTokenManagerRepository.cs" />
+    <Compile Include="Repositories\IRepository.cs" />
+    <Compile Include="Repositories\MasterCountryRepository.cs" />
+    <Compile Include="Repositories\MasterDaysOfWeekRepository.cs" />
+    <Compile Include="Repositories\MasterDiplomaRepository.cs" />
+    <Compile Include="Repositories\MasterIntervalRepository.cs" />
+    <Compile Include="Repositories\MasterJobAdditionalInfoRepository.cs" />
+    <Compile Include="Repositories\MasterJobAppropriateForInfoRepository.cs" />
+    <Compile Include="Repositories\MasterJobIntVolunteerInfoRepository.cs" />
+    <Compile Include="Repositories\MasterJobTypesRepository.cs" />
+    <Compile Include="Repositories\MasterLanguagesRepository.cs" />
+    <Compile Include="Repositories\MasterOrganizationTypeRepository.cs" />
+    <Compile Include="Repositories\MasterSceeningQuestionsRepository.cs" />
+    <Compile Include="Repositories\MasterSkillsRepository.cs" />
+    <Compile Include="Repositories\MasterTimeCommitmentsRepository.cs" />
+    <Compile Include="Repositories\MasterWorkAreaRepository.cs" />
+    <Compile Include="Repositories\OrganizationProfilesRepository.cs" />
+    <Compile Include="Repositories\UsersRepository.cs" />
+    <Compile Include="Repositories\VolunteerProfilesRepository.cs" />
+    <Compile Include="VolunteerApiDBContext.cs" />
+    <Compile Include="VolunteerDatabaseInitializer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

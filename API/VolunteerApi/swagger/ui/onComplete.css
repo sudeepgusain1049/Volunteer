@@ -1,0 +1,26 @@
+﻿
+#customApiHeader
+{
+   font-size:1.8em;
+   text-decoration: underline;
+}
+
+#stepsTitle
+{
+   text-decoration: underline;
+}
+
+ol {
+    counter-reset: item;
+    list-style-type: decimal;
+}
+
+ol li:before {
+    content: counter(item, decimal) '. ';
+    counter-increment: item;
+}
+
+#customApiFooter {
+    margin-top: 20px;
+    text-align: center;
+}

@@ -1,0 +1,66 @@
+﻿@using Volunteer.UI.Web.Models;
+@{
+    int culture = SiteSession.CurrentUICulture;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewBag.Title - Volunteer</title>
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width" />
+    @Styles.Render("~/Content/bootstrap")
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    @Styles.Render("~/Content/datePickerCss")
+    @Styles.Render("~/Content/typeAheadCSS")
+</head>
+<body>
+    
+    @Html.Partial("_Header")
+
+    
+
+    <div class="wrapper">
+
+        <div class="SuperContainer">
+            <div class="dvBorder">
+            @RenderSection("featured", required: false)
+            @RenderBody()
+           </div>
+        </div>
+
+        <div class="push"></div>
+
+    </div>
+
+     @Html.Partial("_Footer")
+
+    <script type="text/javascript">
+        var paramObject = {
+            UrlChangeCulture: '@Url.Content("~/Account/ChangeCurrentCulture")'
+        }
+        function changeCurrentCulture(culture) {
+            document.location = paramObject.UrlChangeCulture + "?culture=" + culture;
+            return true;
+        }
+
+    </script>
+
+    
+     @Scripts.Render("~/bundles/jquery")
+
+        @Scripts.Render("~/bundles/jqueryval")
+        @Scripts.Render("~/bundles/jqueryDD")
+        @Scripts.Render("~/bundles/bootstrap")
+        @Scripts.Render("~/bundles/datePickerJs")
+        @Scripts.Render("~/bundles/typeAheadJS")
+        @RenderSection("VolunteerAppScripts",false)
+
+    @RenderSection("scripts", required: false)
+    
+    
+        
+</body>
+</html>

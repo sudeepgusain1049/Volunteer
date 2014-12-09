@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ServiceConfiguration serviceName="VolunteerAzureService" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceConfiguration" osFamily="2" osVersion="*" schemaVersion="2014-06.2.4">
+  <Role name="Volunteer.UI.Web">
+    <Instances count="1" />
+    <ConfigurationSettings>
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="UseDevelopmentStorage=true" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.Enabled" value="true" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountUsername" value="ePageoAdmin" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountEncryptedPassword" value="MIIBnQYJKoZIhvcNAQcDoIIBjjCCAYoCAQAxggFOMIIBSgIBADAyMB4xHDAaBgNVBAMME1dpbmRvd3MgQXp1cmUgVG9vbHMCEBkf85kMUyyUQHLF9n0cAbAwDQYJKoZIhvcNAQEBBQAEggEAjBK3du9L28Q5gmQvfNmQ/VvegeBLHA1BLpVUMLKVSb0WSLZyNxylSxSLBhL7gAIDXDmtnh2gbHk6us3XwUhK6MhpMDg3+ok0hzCq7+9Gw2tBSr9yI1MUaZtG+x7aWjl78+RteheYPGuzi6xrK0lKaTsas3eT9nkBJb+hhWvo99TIZxvfsqqHIPjGTjpwAlpfS0+jgmvPxLGQ1noOdfWf9giuMNuVu7q+H8zlIlRbYERqJRv0nHXr3CROE8GhK5NzvSMsp+JArdDNQpi96sadNX5VrsZnX044Svvy+NLRWJ2zXqspt1J+0taX6fTig8fU8yId+DyS5NcFIkjujMJCsjAzBgkqhkiG9w0BBwEwFAYIKoZIhvcNAwcECPapf4ZgQO3pgBC2fHPJ3p/aIhBK/gnGmFUQ" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountExpiration" value="2015-11-03T23:59:59.0000000+05:30" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteForwarder.Enabled" value="true" />
+    </ConfigurationSettings>
+    <Certificates>
+      <Certificate name="Microsoft.WindowsAzure.Plugins.RemoteAccess.PasswordEncryption" thumbprint="38717861E39698077BB5A2CD3803143497C76EB2" thumbprintAlgorithm="sha1" />
+    </Certificates>
+  </Role>
+</ServiceConfiguration>

@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VolunteerApi", "VolunteerApi\VolunteerApi.csproj", "{60C04FCC-7C3F-49B8-9194-EBC7B0A5FC9C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestApiConsumer", "TestApiConsumer\TestApiConsumer.csproj", "{6750C309-C00E-4E65-BB6D-1A730C73D4CB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Volunteer.Data", "Volunteer.Data\Volunteer.Data.csproj", "{8F4F4C4E-01F7-4DB1-AB1D-00EB5E947177}"
+EndProject
+Project("{CC5FD16D-436D-48AD-A40C-5A424C6E3E79}") = "VolunteerApiCloud", "VolunteerApiCloud\VolunteerApiCloud.ccproj", "{7AC69E6F-8DEF-4553-B138-3475947F1C06}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 5
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://mrbrown.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = VolunteerApi\\VolunteerApi.csproj
+		SccProjectName1 = VolunteerApi
+		SccLocalPath1 = VolunteerApi
+		SccProjectUniqueName2 = TestApiConsumer\\TestApiConsumer.csproj
+		SccProjectName2 = TestApiConsumer
+		SccLocalPath2 = TestApiConsumer
+		SccProjectUniqueName3 = Volunteer.Data\\Volunteer.Data.csproj
+		SccProjectName3 = Volunteer.Data
+		SccLocalPath3 = Volunteer.Data
+		SccProjectUniqueName4 = VolunteerApiCloud\\VolunteerApiCloud.ccproj
+		SccProjectName4 = VolunteerApiCloud
+		SccLocalPath4 = VolunteerApiCloud
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{60C04FCC-7C3F-49B8-9194-EBC7B0A5FC9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60C04FCC-7C3F-49B8-9194-EBC7B0A5FC9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60C04FCC-7C3F-49B8-9194-EBC7B0A5FC9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60C04FCC-7C3F-49B8-9194-EBC7B0A5FC9C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6750C309-C00E-4E65-BB6D-1A730C73D4CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6750C309-C00E-4E65-BB6D-1A730C73D4CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6750C309-C00E-4E65-BB6D-1A730C73D4CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6750C309-C00E-4E65-BB6D-1A730C73D4CB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F4F4C4E-01F7-4DB1-AB1D-00EB5E947177}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F4F4C4E-01F7-4DB1-AB1D-00EB5E947177}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F4F4C4E-01F7-4DB1-AB1D-00EB5E947177}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F4F4C4E-01F7-4DB1-AB1D-00EB5E947177}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7AC69E6F-8DEF-4553-B138-3475947F1C06}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7AC69E6F-8DEF-4553-B138-3475947F1C06}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7AC69E6F-8DEF-4553-B138-3475947F1C06}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7AC69E6F-8DEF-4553-B138-3475947F1C06}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
